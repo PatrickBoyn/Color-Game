@@ -1,0 +1,1 @@
+alert("We have the power!");
