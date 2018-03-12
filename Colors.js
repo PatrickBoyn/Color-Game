@@ -31,7 +31,7 @@ for(var i = 0; i < square.length; i++){
         
         // Checks if the right answer was clicked
         if(clicked === correct){
-            alert("Correct!");
+            message.textContent = "Correct!";
         }else{
             this.style.backgroundColor = "#232323";
             message.textContent = "Try again!";
