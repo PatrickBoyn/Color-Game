@@ -12,6 +12,8 @@ const displayColor = document.getElementById("displayColor");
 
 const correct = colors[2];
 
+displayColor.textContent = correct;
+
 for(var i = 0; i < square.length; i++){
     square[i].style.backgroundColor = colors[i];
 };
