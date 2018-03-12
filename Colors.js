@@ -6,3 +6,5 @@ const colors = [
     "rgb(255, 255, 255)",
     "rgb(12, 200, 30)" 
 ];
+
+const square = document.querySelectorAll(".square");
