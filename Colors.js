@@ -11,6 +11,7 @@ const colors = [
 // The selectors
 const square = document.querySelectorAll(".square");
 const displayColor = document.getElementById("displayColor");
+const message = document.getElementById("message");
 
 // The hard coded correct color
 const correct = colors[2];
