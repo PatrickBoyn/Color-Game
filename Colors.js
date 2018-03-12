@@ -38,3 +38,7 @@ for(var i = 0; i < square.length; i++){
         }
     });
 };
+
+function colorChange(color){
+
+}
