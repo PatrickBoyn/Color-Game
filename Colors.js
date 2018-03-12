@@ -10,7 +10,7 @@ const colors = [
 
 // The selectors
 const square = document.querySelectorAll(".square");
-const displayColor = document.getElementById("displayColor");
+const displayColor = colorPicker();
 const message = document.getElementById("message");
 
 // The hard coded correct color
@@ -46,3 +46,7 @@ function colorChange(color){
         square[i].style.background = color;
     }
 }
+
+function colorPicker(){
+
+};
