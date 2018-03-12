@@ -27,6 +27,8 @@ for(var i = 0; i < square.length; i++){
     square[i].addEventListener("click", function(){
         // Test to see if squares are clickable
         const clicked = this.style.backgroundColor;
+        
+        // Checks if the right answer was clicked
         if(clicked === correct){
             alert("Correct!");
         }else{
