@@ -24,7 +24,7 @@ for(var i = 0; i < square.length; i++){
     
     square[i].style.backgroundColor = colors[i];
     
-    // Makes all of the squares clickable 
+    // Makes all of the squares clickable colors
     square[i].addEventListener("click", function(){
         // Test to see if squares are clickable
         const clicked = this.style.backgroundColor;
@@ -45,9 +45,9 @@ function colorChange(color){
     for(var i = 0; i < square.length; i++){
         square[i].style.background = color;
     }
-}
+};
 
 function colorPicker(){
-    const rand = Math.floor(Math.floor(random() * color.length));
-    return color[rand];
+    const rand = Math.floor(Math.random() * colors.length);
+    return colors[rand];
 };
