@@ -25,6 +25,12 @@ for(var i = 0; i < square.length; i++){
     
     // Makes all of the squares clickable 
     square[i].addEventListener("click", function(){
-
+        // Test to see if squares are clickable
+        const clicked = this.style.backgroundColor;
+        if(clicked === correct){
+            alert("Correct!");
+        }else{
+            alert("Wrong!");
+        }
     });
 };
