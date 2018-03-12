@@ -1,3 +1,4 @@
+// The hard coded color list
 const colors = [
     "rgb(255, 0, 0)",
     "rgb(255, 255, 0)",
@@ -7,13 +8,17 @@ const colors = [
     "rgb(12, 5, 100)" 
 ];
 
+// The selectors
 const square = document.querySelectorAll(".square");
 const displayColor = document.getElementById("displayColor");
 
+// The hard coded correct color
 const correct = colors[2];
 
+// Sets the span to show the correct variable's RBG value
 displayColor.textContent = correct;
 
+// Loops through all of the squares and gives them a different color
 for(var i = 0; i < square.length; i++){
     square[i].style.backgroundColor = colors[i];
 };
