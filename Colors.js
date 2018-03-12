@@ -12,4 +12,4 @@ const correct = colors[2];
 
 for(var i = 0; i < square.length; i++){
     square[i].style.backgroundColor = colors[i];
-}
+};
