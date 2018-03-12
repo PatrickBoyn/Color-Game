@@ -32,7 +32,7 @@ for(var i = 0; i < square.length; i++){
         if(clicked === correct){
             alert("Correct!");
         }else{
-            alert("Wrong!");
+            this.style.backgroundColor = "#232323";
         }
     });
 };
