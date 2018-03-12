@@ -48,5 +48,6 @@ function colorChange(color){
 }
 
 function colorPicker(){
-
+    const rand = Math.floor(Math.floor(random() * color.length));
+    return color[rand];
 };
