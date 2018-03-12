@@ -39,6 +39,9 @@ for(var i = 0; i < square.length; i++){
     });
 };
 
+// Changes all squares to the color of the correct square
 function colorChange(color){
-
+    for(var i = 0; i < colors.length; i++){
+        
+    }
 }
