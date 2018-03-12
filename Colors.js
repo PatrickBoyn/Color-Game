@@ -32,6 +32,7 @@ for(var i = 0; i < square.length; i++){
         // Checks if the right answer was clicked
         if(clicked === correct){
             message.textContent = "Correct!";
+            colorChange(clicked);
         }else{
             this.style.backgroundColor = "#232323";
             message.textContent = "Try again!";
