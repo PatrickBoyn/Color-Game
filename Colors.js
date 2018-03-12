@@ -20,5 +20,11 @@ displayColor.textContent = correct;
 
 // Loops through all of the squares and gives them a different color
 for(var i = 0; i < square.length; i++){
+    
     square[i].style.backgroundColor = colors[i];
+    
+    // Makes all of the squares clickable 
+    square[i].addEventListener("click", function(){
+
+    });
 };
