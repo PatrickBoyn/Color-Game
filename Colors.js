@@ -35,7 +35,6 @@ for(var i = 0; i < square.length; i++){
         }else{
             this.style.backgroundColor = "#232323";
             message.textContent = "Try again!";
-            message.style.color = "white";
         }
     });
 };
