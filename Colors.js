@@ -8,6 +8,8 @@ const colors = [
 ];
 
 const square = document.querySelectorAll(".square");
+const displayColor = document.getElementById("displayColor");
+
 const correct = colors[2];
 
 for(var i = 0; i < square.length; i++){
