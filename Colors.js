@@ -34,6 +34,8 @@ for(var i = 0; i < square.length; i++){
             alert("Correct!");
         }else{
             this.style.backgroundColor = "#232323";
+            message.textContent = "Try again!";
+            message.style.color = "white";
         }
     });
 };
