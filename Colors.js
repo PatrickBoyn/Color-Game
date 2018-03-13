@@ -12,6 +12,7 @@ const colors = [
 const square = document.querySelectorAll(".square");
 const displayColor = colorPicker();
 const message = document.getElementById("message");
+const test = document.getElementById("test");
 
 // The hard coded correct color
 const correct = colorPicker();
