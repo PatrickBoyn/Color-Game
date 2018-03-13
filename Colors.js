@@ -34,9 +34,11 @@ for(var i = 0; i < square.length; i++){
         if(clicked === correct){
             message.textContent = "Correct!";
             colorChange(clicked);
+            console.log(clicked);
         }else{
             this.style.backgroundColor = "#232323";
             message.textContent = "Try again!";
+            console.log(clicked);
         }
     });
 };
