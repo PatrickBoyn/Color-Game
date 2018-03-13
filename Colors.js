@@ -15,7 +15,7 @@ const message = document.getElementById("message");
 const test = document.getElementById("test");
 const isOver = true;
 
-// The hard coded correct color
+// No longer hard coded, picked by a function at the bottom of the code
 const correct = colorPicker();
 
 // Sets the span to show the correct variable's RBG value
