@@ -13,6 +13,7 @@ const square = document.querySelectorAll(".square");
 const displayColor = colorPicker();
 const message = document.getElementById("message");
 const test = document.getElementById("test");
+const isOver = false;
 
 // The hard coded correct color
 const correct = colorPicker();
@@ -47,6 +48,7 @@ for(var i = 0; i < square.length; i++){
 function colorChange(color){
     for(var i = 0; i < square.length; i++){
         square[i].style.background = color[i];
+        this.backgroundColor = correct;
     }
 };
 
