@@ -1,11 +1,11 @@
 // The hard coded color list
 const colors = [
-    "rgb(255, 0, 0)",
-    "rgb(255, 255, 0)",
-    "rgb(0, 255, 0)",
-    "rgb(0, 255, 255)",
-    "rgb(255, 255, 255)",
-    "rgb(12, 5, 100)" 
+    "RGB(255, 0, 0)",
+    "RGB(255, 255, 0)",
+    "RGB(0, 255, 0)",
+    "RGB(0, 255, 255)",
+    "RGB(255, 255, 255)",
+    "RGB(12, 5, 100)" 
 ];
 
 // The selectors
@@ -18,7 +18,7 @@ const test = document.getElementById("test");
 const correct = colorPicker();
 
 // Sets the span to show the correct variable's RBG value
-displayColor.textContent = correct;
+// displayColor.textContent = correct;
 test.textContent = correct;
 // Loops through all of the squares and gives them a different color
 for(var i = 0; i < square.length; i++){
