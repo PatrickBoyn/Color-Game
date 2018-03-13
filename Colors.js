@@ -51,3 +51,5 @@ function colorPicker(){
     const rand = Math.floor(Math.random() * colors.length);
     return colors[rand];
 };
+
+console.log(correct);
