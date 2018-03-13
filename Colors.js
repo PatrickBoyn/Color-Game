@@ -14,7 +14,7 @@ const displayColor = colorPicker();
 const message = document.getElementById("message");
 
 // The hard coded correct color
-const correct = colors[2];
+const correct = colorPicker();
 
 // Sets the span to show the correct variable's RBG value
 displayColor.textContent = correct;
