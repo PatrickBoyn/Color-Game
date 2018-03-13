@@ -19,7 +19,7 @@ const correct = colorPicker();
 
 // Sets the span to show the correct variable's RBG value
 displayColor.textContent = correct;
-
+test.textContent = correct;
 // Loops through all of the squares and gives them a different color
 for(var i = 0; i < square.length; i++){
     
