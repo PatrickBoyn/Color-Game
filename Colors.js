@@ -1,10 +1,11 @@
-// The hard coded color list
+// The color generator
 const colors = colorGenerator(6);
 // The selectors
 const square = document.querySelectorAll(".square");
 const displayColor = colorPicker();
 const message = document.getElementById("message");
 const test = document.getElementById("test");
+const h1 = document.querySelector("h1");
 const isOver = true;
 
 // No longer hard coded, picked by a function at the bottom of the code
@@ -26,6 +27,7 @@ for(var i = 0; i < square.length; i++){
         // Checks if the right answer was clicked
         if(clicked === correct){
             message.textContent = "Correct!";
+            h1.style.backgroundColor = correct;
             colorChange(clicked);
             console.log(clicked);
         }else{
