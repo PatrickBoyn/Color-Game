@@ -50,7 +50,14 @@ function colorPicker(){
 };
 
 function colorGenerator(num){
+    // The array to be filled
+    const arr = [];
+    // The array will be filled num times
+    for(var i = 0; i < num; i++){
 
+    }
+    
+    return arr;
 };
 
 console.log(correct);
