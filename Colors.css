@@ -1,6 +1,6 @@
 body{
     background:#232323;
-    color:white;
+    color:tan;
     text-align:center;
     margin:0 auto;
 }
@@ -9,6 +9,7 @@ h1{
 }
 button{
     border-style:none;
+    border-radius:50%;
     background-color:wheat;
 }
 .square{
