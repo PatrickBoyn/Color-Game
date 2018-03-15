@@ -14,6 +14,7 @@ const isOver = true;
 // No longer hard coded, picked by a function at the bottom of the code
 const correct = colorPicker();
 
+// Resets the game
 reset.addEventListener("click", function(){
     alert("Clicked!");
 });
@@ -54,12 +55,12 @@ function colorChange(color){
         this.backgroundColor = correct;
     }
 };
-
+// Picks the color values 
 function colorPicker(){
     const rand = Math.floor(Math.random() * colors.length);
     return colors[rand];
 };
-
+// Fills in the squares with random colors
 function colorGenerator(num){
     // The array to be filled
     const arr = [];
@@ -71,8 +72,8 @@ function colorGenerator(num){
     return arr;
 };
 
+// Generates a random rgb value based between 0 and 255
 function randomColor(){
-    
     const r = Math.floor(Math.random() * 256);
     const g = Math.floor(Math.random() * 256);
     const b = Math.floor(Math.random() * 256);
