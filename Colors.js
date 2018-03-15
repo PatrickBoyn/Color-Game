@@ -48,7 +48,7 @@ for(var i = 0; i < square.length; i++){
 function colorChange(color){
     for(var i = 0; i < square.length; i++){
         square[i].style.background = color[i];
-        this.backgroundColor = correct;
+        this.backgroundColor = correct[i];
     }
 };
 
