@@ -42,11 +42,11 @@ for(var i = 0; i < square.length; i++){
             stripe.style.backgroundColor = correct;
             instructions.style.backgroundColor = correct;
             colorChange(clicked);
-            console.log(clicked);
+            console.log("You clicked on: " + clicked);
         }else{
             this.style.backgroundColor = "#232323";
             message.textContent = "Try again!";
-            console.log(clicked);
+            console.log("You clicked on " + clicked);
         }
     });
 };
