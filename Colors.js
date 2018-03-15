@@ -1,5 +1,5 @@
 // The color generator
-const colors = colorGenerator(6);
+var colors = colorGenerator(6);
 // The selectors
 const square = document.querySelectorAll(".square");
 const displayColor = colorPicker();
@@ -12,11 +12,13 @@ const reset = document.getElementById("new");
 const isOver = true;
 
 // No longer hard coded, picked by a function at the bottom of the code
-const correct = colorPicker();
+var correct = colorPicker();
 
 // Resets the game
 reset.addEventListener("click", function(){
-    alert("Clicked!");
+    colors = colorGenerator(6);
+    correct = colorPicker();
+    displayColor.textContent = correct;
 });
 
 // Sets the span to show the correct variable's RBG value
@@ -81,4 +83,4 @@ function randomColor(){
     return "rgb(" + r + ", " + g  + ", " + b + ")";
 };
 
-console.log(correct);
+console.log("The correct color is: " + correct);
