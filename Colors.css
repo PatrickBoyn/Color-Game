@@ -15,9 +15,6 @@ body{
     margin:0 auto;
     max-width:600px;
 }
-#message{
-    color:white;
-}
 #stripe{
     background-color:blue;
 }
