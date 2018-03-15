@@ -39,8 +39,8 @@ for(var i = 0; i < square.length; i++){
         if(clicked === correct){
             message.textContent = "Correct!";
             h1.style.backgroundColor = correct;
-            stripe.style.backgroundColor = correct;
-            instructions.style.backgroundColor = correct;
+            // stripe.style.backgroundColor = correct;
+            // instructions.style.backgroundColor = correct;
             colorChange(clicked);
             console.log("You clicked on: " + clicked);
         }else{
