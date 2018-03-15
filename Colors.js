@@ -7,6 +7,7 @@ const message = document.getElementById("message");
 const picker = document.getElementById("picker");
 const h1 = document.querySelector("h1");
 const stripe = document.getElementById("stripe");
+const instructions = document.getElementById("instructions");
 const isOver = true;
 
 // No longer hard coded, picked by a function at the bottom of the code
@@ -30,6 +31,7 @@ for(var i = 0; i < square.length; i++){
             message.textContent = "Correct!";
             h1.style.backgroundColor = correct;
             stripe.style.backgroundColor = correct;
+            instructions.style.backgroundColor = correct;
             colorChange(clicked);
             console.log(clicked);
         }else{
