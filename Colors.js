@@ -8,10 +8,15 @@ const picker = document.getElementById("picker");
 const h1 = document.querySelector("h1");
 const stripe = document.getElementById("stripe");
 const instructions = document.getElementById("instructions");
+const reset = document.getElementById("new");
 const isOver = true;
 
 // No longer hard coded, picked by a function at the bottom of the code
 const correct = colorPicker();
+
+reset.addEventListener("click", function(){
+    alert("Clicked!");
+});
 
 // Sets the span to show the correct variable's RBG value
 // displayColor.textContent = correct;
