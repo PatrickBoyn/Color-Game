@@ -2,6 +2,7 @@ body{
     background:#232323;
     color:white;
     text-align:center;
+    margin:0 auto;
 }
 .square{
     width:30%;
@@ -18,5 +19,8 @@ body{
     color:white;
 }
 #stripe{
+    background-color:blue;
+}
+h1{
     background-color:blue;
 }
