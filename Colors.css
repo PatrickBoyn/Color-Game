@@ -7,6 +7,9 @@ body{
 h1{
     background-color:blue;
 }
+button{
+    border-style:none;
+}
 .square{
     width:30%;
     padding-bottom:30%;
@@ -23,4 +26,5 @@ h1{
 }
 #instructions{
     background-color:blue;
+    border-bottom:2px solid white;
 }
