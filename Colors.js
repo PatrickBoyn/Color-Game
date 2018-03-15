@@ -49,7 +49,7 @@ function colorPicker(){
     return colors[rand];
 };
 
-function colorGenerator(){
+function colorGenerator(num){
 
 };
 
