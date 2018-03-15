@@ -4,6 +4,9 @@ body{
     text-align:center;
     margin:0 auto;
 }
+h1{
+    background-color:blue;
+}
 .square{
     width:30%;
     padding-bottom:30%;
@@ -16,9 +19,6 @@ body{
     max-width:600px;
 }
 #stripe{
-    background-color:blue;
-}
-h1{
     background-color:blue;
 }
 #instructions{
