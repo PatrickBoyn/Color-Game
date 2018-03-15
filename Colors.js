@@ -54,8 +54,8 @@ function colorGenerator(num){
     const arr = [];
     // The array will be filled num times
     for(var i = 0; i < num; i++){
-
-    }
+        arr.push(randomColor());
+    };
 
     return arr;
 };
