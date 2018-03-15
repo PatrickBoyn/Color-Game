@@ -9,6 +9,7 @@ h1{
 }
 button{
     border-style:none;
+    background-color:white;
 }
 .square{
     width:30%;
