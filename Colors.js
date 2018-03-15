@@ -4,7 +4,7 @@ const colors = colorGenerator(6);
 const square = document.querySelectorAll(".square");
 const displayColor = colorPicker();
 const message = document.getElementById("message");
-const test = document.getElementById("test");
+const picker = document.getElementById("picker");
 const h1 = document.querySelector("h1");
 const isOver = true;
 
@@ -13,7 +13,7 @@ const correct = colorPicker();
 
 // Sets the span to show the correct variable's RBG value
 // displayColor.textContent = correct;
-test.textContent = correct;
+picker.textContent = correct;
 // Loops through all of the squares and gives them a different color
 for(var i = 0; i < square.length; i++){
     
@@ -21,7 +21,7 @@ for(var i = 0; i < square.length; i++){
     
     // Makes all of the squares clickable colors
     square[i].addEventListener("click", function(){
-        // Test to see if squares are clickable
+        // Tests to see if squares are clickable
         const clicked = this.style.backgroundColor;
         
         // Checks if the right answer was clicked
