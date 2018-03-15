@@ -56,8 +56,12 @@ function colorGenerator(num){
     for(var i = 0; i < num; i++){
 
     }
-    
+
     return arr;
+};
+
+function randomColor(){
+    Math.floor(Math.random() * 256)
 };
 
 console.log(correct);
