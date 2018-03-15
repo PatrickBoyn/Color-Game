@@ -1,5 +1,5 @@
 // The hard coded color list
-const colors = colorGenerator();
+const colors = colorGenerator(6);
 // The selectors
 const square = document.querySelectorAll(".square");
 const displayColor = colorPicker();
@@ -64,7 +64,7 @@ function randomColor(){
     const r = Math.floor(Math.random() * 256);
     const g = Math.floor(Math.random() * 256);
     const b = Math.floor(Math.random() * 256);
-    return "rgb(" + r + "," + g  + "," + b + ")"
+    return "rgb(" + r + ", " + g  + ", " + b + ")";
 };
 
 console.log(correct);
