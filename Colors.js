@@ -61,7 +61,9 @@ function colorGenerator(num){
 };
 
 function randomColor(){
-    Math.floor(Math.random() * 256)
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
 };
 
 console.log(correct);
