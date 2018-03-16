@@ -24,7 +24,7 @@ reset.addEventListener("click", function(){
         square[i].style.backgroundColor = colors[i];
     }
     h1.style.backgroundColor =  "cyan";
-    new.textContent = "New Colors";
+    reset.textContent = "New Colors";
 });
 
 // Sets the span to show the correct variable's RBG value
