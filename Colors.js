@@ -19,7 +19,7 @@ var correct = colorPicker();
 reset.addEventListener("click", function(){
     colors = colorGenerator(6);
     correct = colorPicker();
-    displayColor.textContent = correct;
+    picker.textContent = correct;
 });
 
 // Sets the span to show the correct variable's RBG value
