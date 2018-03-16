@@ -20,6 +20,9 @@ reset.addEventListener("click", function(){
     colors = colorGenerator(6);
     correct = colorPicker();
     picker.textContent = correct;
+    for(var i = 0; i < square.length; i++){
+        
+    }
 });
 
 // Sets the span to show the correct variable's RBG value
