@@ -5,12 +5,16 @@ body{
     margin:0 auto;
 }
 h1{
-    background-color:blue;
+    background-color:cyan;
 }
 button{
     border-style:none;
     border-radius:50%;
     background-color:wheat;
+}
+button:hover{
+    color:white;
+    background:darkgoldenrod;
 }
 .square{
     width:30%;
@@ -24,8 +28,8 @@ button{
     max-width:600px;
 }
 #stripe{
-    background-color:blue;
+    background-color:cyan;
 }
 #instructions{
-    background-color:blue;
+    background-color:cyan;
 }
