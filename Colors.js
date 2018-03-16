@@ -23,6 +23,7 @@ reset.addEventListener("click", function(){
     for(var i = 0; i < square.length; i++){
         square[i].style.backgroundColor = colors[i];
     }
+    h1.style.backgroundColor =  "cyan";
 });
 
 // Sets the span to show the correct variable's RBG value
