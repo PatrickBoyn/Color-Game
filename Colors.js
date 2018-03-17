@@ -19,11 +19,13 @@ var correct = colorPicker();
 
 // Adds the event listener for changing to easy mode
 easy.addEventListener("click", function(){
-    alert("Easy button clicked");
+    easy.classList.add("on");
+    hard.classList.remove("on");
 });
 // Same for the hard mode
 hard.addEventListener("click", function(){
-    alert("Hard button clicked");
+    hard.classList.add("on");
+    easy.classList.remove("on");
 });
 
 // Resets the game
