@@ -1,6 +1,6 @@
 body{
     background:#232323;
-    color:rgb(2, 54, 2);
+    color:rgb(0, 0, 0);
     text-align:center;
     margin:0 auto;
 }
@@ -32,7 +32,7 @@ button:hover{
     color:white;
 }
 #stripe{
-    background-color:cyan;
+    background-color:darkblue;
 }
 #instructions{
     background-color:cyan;
