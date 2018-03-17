@@ -40,8 +40,8 @@ hard.addEventListener("click", function(){
     colors = colorGenerator(6);
     correct = colorPicker();
     for(var i = 0; i < square.length; i++){
-        squares[i].style.background = colors[i];
-        squares[i].style.display = "block";
+        square[i].style.background = colors[i];
+        square[i].style.display = "block";
     }
     console.log(colors);
 });
