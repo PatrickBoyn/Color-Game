@@ -17,6 +17,11 @@ const isOver = true;
 // No longer hard coded, picked by a function at the bottom of the code
 var correct = colorPicker();
 
+// Adds the event listener for changing to easy mode
+easy.addEventListener("click", function(){
+    alert("Easy button clicked");
+});
+
 // Resets the game
 reset.addEventListener("click", function(){
     colors = colorGenerator(6);
