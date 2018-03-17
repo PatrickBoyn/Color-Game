@@ -21,11 +21,18 @@ var correct = colorPicker();
 easy.addEventListener("click", function(){
     easy.classList.add("easy");
     hard.classList.remove("hard");
+    colors = colorGenerator(3);
+    correct = colorPicker();
+    picker.textContent = correct;
+    console.log(colors);
 });
 // Same for the hard mode
 hard.addEventListener("click", function(){
     hard.classList.add("hard");
     easy.classList.remove("easy");
+    colors = colorGenerator(6);
+    correct = colorPicker();
+    console.log(colors);
 });
 
 // Resets the game
