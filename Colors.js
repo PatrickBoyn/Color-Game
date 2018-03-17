@@ -22,7 +22,8 @@ var correct = colorPicker();
 easy.addEventListener("click", function(){
     easy.classList.add("easy");
     hard.classList.remove("hard");
-    colors = colorGenerator(3);
+    numsquares = 3;
+    colors = colorGenerator(numsquares);
     correct = colorPicker();
     picker.textContent = correct;
     for(var i = 0; i < square.length; i++){
@@ -38,7 +39,8 @@ easy.addEventListener("click", function(){
 hard.addEventListener("click", function(){
     hard.classList.add("hard");
     easy.classList.remove("easy");
-    colors = colorGenerator(6);
+    numsquares = 6;
+    colors = colorGenerator(numsquares);
     correct = colorPicker();
     for(var i = 0; i < square.length; i++){
         square[i].style.background = colors[i];
@@ -49,7 +51,7 @@ hard.addEventListener("click", function(){
 
 // Resets the game
 reset.addEventListener("click", function(){
-    colors = colorGenerator(6);
+    colors = colorGenerator(numsquares);
     correct = colorPicker();
     picker.textContent = correct;
     for(var i = 0; i < square.length; i++){
