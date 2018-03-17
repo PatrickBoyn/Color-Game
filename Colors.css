@@ -7,6 +7,12 @@ body{
 h1{
     background-color:cyan;
 }
+h2{
+    margin:0;
+}
+p{
+    margin:0;
+}
 button{
     border-style:none;
     border-radius:50%;
@@ -33,6 +39,9 @@ button:hover{
 }
 #stripe{
     background-color:darkblue;
+}
+#message{
+    color:white;
 }
 #instructions{
     background-color:cyan;
