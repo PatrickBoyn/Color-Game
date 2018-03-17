@@ -21,6 +21,10 @@ var correct = colorPicker();
 easy.addEventListener("click", function(){
     alert("Easy button clicked");
 });
+// Same for the hard mode
+hard.addEventListener("click", function(){
+    alert("Hard button clicked");
+});
 
 // Resets the game
 reset.addEventListener("click", function(){
