@@ -27,7 +27,9 @@ easy.addEventListener("click", function(){
     for(var i = 0; i < square.length; i++){
         if(colors[i]){
             square[i].style.background = colors[i];
-        }
+        }else{
+            square[i].style.display = "none";
+        };
     };
     console.log(colors);
 });
@@ -37,6 +39,10 @@ hard.addEventListener("click", function(){
     easy.classList.remove("easy");
     colors = colorGenerator(6);
     correct = colorPicker();
+    for(var i = 0; i < square.length; i++){
+        squares[i].style.background = colors[i];
+        squares[i].style.display = "block";
+    }
     console.log(colors);
 });
 
