@@ -1,5 +1,6 @@
+var numsquares = 6;
 // The color generator
-var colors = colorGenerator(6);
+var colors = colorGenerator(numsquares);
 // The selectors
 const square = document.querySelectorAll(".square");
 const displayColor = colorPicker();
