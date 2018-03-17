@@ -27,6 +27,10 @@ button:hover{
     margin:0 auto;
     max-width:600px;
 }
+.on{
+    background-color:darkgoldenrod;
+    color:white;
+}
 #stripe{
     background-color:cyan;
 }
