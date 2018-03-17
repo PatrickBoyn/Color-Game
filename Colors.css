@@ -19,10 +19,6 @@ button{
     border-radius:50%;
     background-color:wheat;
 }
-button:hover{
-    color:white;
-    background:darkgoldenrod;
-}
 .square{
     width:30%;
     padding-bottom:30%;
@@ -34,8 +30,12 @@ button:hover{
     margin:0 auto;
     max-width:600px;
 }
-.on{
-    background-color:darkgoldenrod;
+.easy{
+    background-color:darkgreen;
+    color:white;
+}
+.hard{
+    background-color:red;
     color:white;
 }
 #stripe{
