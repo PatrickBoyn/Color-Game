@@ -24,6 +24,11 @@ easy.addEventListener("click", function(){
     colors = colorGenerator(3);
     correct = colorPicker();
     picker.textContent = correct;
+    for(var i = 0; i < square.length; i++){
+        if(colors[i]){
+            square[i].style.background = colors[i];
+        }
+    };
     console.log(colors);
 });
 // Same for the hard mode
