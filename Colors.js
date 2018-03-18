@@ -3,18 +3,19 @@ var numsquares = 6;
 var colors = colorGenerator(numsquares);
 // The selectors
 const square = document.querySelectorAll(".square");
-const displayColor = colorPicker();
 const message = document.getElementById("message");
 const picker = document.getElementById("picker");
 const h1 = document.querySelector("h1");
 const stripe = document.getElementById("stripe");
 const instructions = document.getElementById("instructions");
 const reset = document.getElementById("new");
-const easy = document.getElementById("easy");
-const hard = document.getElementById("hard");
+const mode = document.querySelectorAll(".mode");
 
 // No longer hard coded, picked by a function at the bottom of the code
 var correct = colorPicker();
+// Display the correct color.
+const displayColor = colorPicker();
+
 
 // Adds the event listener for changing to easy mode
 easy.addEventListener("click", function(){
