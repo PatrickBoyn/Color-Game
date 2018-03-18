@@ -15,6 +15,7 @@ const mode = document.querySelectorAll(".mode");
 var correct = colorPicker();
 // Display the correct color.
 const displayColor = colorPicker();
+loop();
 
 for(var i =0; i < mode.length; i++){
     mode[i].addEventListener("click", function(){
@@ -28,14 +29,19 @@ for(var i =0; i < mode.length; i++){
 function reset(){
     colors = colorGenerator(numsquares);
     correct = colorPicker();
+    loop();
     picker.textContent = correct;
     message.textContent = "";
-    for(var i = 0; i < square.length; i++){
-        square[i].style.backgroundColor = colors[i];
-    }
     h1.style.backgroundColor =  "cyan";
     reset.textContent = "New Colors";
 };
+
+function loop(){
+    for(var i = 0; i < square.length; i++){
+        square[i].style.backgroundColor = colors[i];
+        square[i].style.display = "block";
+    }
+}
 // Adds the event listener for changing to easy mode
 // easy.addEventListener("click", function(){
 //     easy.classList.add("easy");
