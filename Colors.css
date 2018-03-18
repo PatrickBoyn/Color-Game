@@ -9,6 +9,10 @@ h1{
     background-color:cyan;
     margin:0;
     text-transform:uppercase;
+    padding:15px 0;
+}
+h1 span{
+    display:block;
 }
 h2{
     margin:0;
@@ -50,4 +54,7 @@ button{
 }
 #instructions{
     background-color:cyan;
+}
+#picker{
+    font-size:130%;
 }
