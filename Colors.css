@@ -44,6 +44,7 @@ button:hover{
     float:left;
     background:yellow;
     border-radius:15%;
+    transition:background .8s;
 }
 .container{
     margin:0 auto;
