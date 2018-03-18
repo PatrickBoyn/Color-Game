@@ -23,6 +23,9 @@ for(var i =0; i < mode.length; i++){
     this.classList.add("selected");
     });
 }
+function reset(){
+
+};
 // Adds the event listener for changing to easy mode
 // easy.addEventListener("click", function(){
 //     easy.classList.add("easy");
@@ -60,17 +63,6 @@ for(var i =0; i < mode.length; i++){
 // });
 
 // Resets the game
-reset.addEventListener("click", function(){
-    colors = colorGenerator(numsquares);
-    correct = colorPicker();
-    picker.textContent = correct;
-    message.textContent = "";
-    for(var i = 0; i < square.length; i++){
-        square[i].style.backgroundColor = colors[i];
-    }
-    h1.style.backgroundColor =  "cyan";
-    reset.textContent = "New Colors";
-});
 
 // Sets the span to show the correct variable's RBG value
 // displayColor.textContent = correct;
@@ -99,6 +91,7 @@ for(var i = 0; i < square.length; i++){
         }
     });
 };
+
 
 // Changes all squares to the color of the correct square
 function colorChange(color){
