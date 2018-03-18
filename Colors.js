@@ -12,8 +12,6 @@ const instructions = document.getElementById("instructions");
 const reset = document.getElementById("new");
 const easy = document.getElementById("easy");
 const hard = document.getElementById("hard");
-// A boolean for later
-const isOver = true;
 
 // No longer hard coded, picked by a function at the bottom of the code
 var correct = colorPicker();
@@ -27,6 +25,7 @@ easy.addEventListener("click", function(){
     correct = colorPicker();
     picker.textContent = correct;
     message.textContent = "";
+
     for(var i = 0; i < square.length; i++){
         if(colors[i]){
             square[i].style.background = colors[i];
@@ -34,8 +33,10 @@ easy.addEventListener("click", function(){
             square[i].style.display = "none";
         };
     };
+
     console.log(colors);
 });
+
 // Same for the hard mode
 hard.addEventListener("click", function(){
     hard.classList.add("hard");
@@ -69,12 +70,12 @@ reset.addEventListener("click", function(){
 picker.textContent = correct;
 // Loops through all of the squares and gives them a different color
 for(var i = 0; i < square.length; i++){
-    
-    square[i].style.backgroundColor = colors[i];
-    
+
+    square[i].style.backgroundColor = colors[i];    
     // Makes all of the squares clickable colors
     square[i].addEventListener("click", function(){
         // Tests to see if squares are clickable
+       
         const clicked = this.style.backgroundColor;
         
         // Checks if the right answer was clicked
