@@ -24,8 +24,10 @@ p{
 }
 button{
     border-style:none;
-    border-radius:50%;
     background-color:wheat;
+    text-transform:uppercase;
+    height:100%;
+    font-weight:700;
 }
 .square{
     width:30%;
