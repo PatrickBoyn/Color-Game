@@ -12,6 +12,8 @@ h1{
     padding:15px 0;
     letter-spacing:2px;
     transition:background .8s;
+    -webkit-transition:background .8s;
+    -moz-transition:background .8s;
 }
 h1 span{
     display:block;
@@ -46,9 +48,11 @@ button:hover{
     background:yellow;
     border-radius:15%;
     transition:background .8s;
+    -webkit-transitoin:background .8s;
+    -moz-transitoin:background .8s;
 }
 .container{
-    margin:0 auto;
+    margin:20px auto;
     max-width:600px;
 }
 .easy{
