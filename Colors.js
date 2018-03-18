@@ -9,7 +9,7 @@ const h1 = document.querySelector("h1");
 const stripe = document.getElementById("stripe");
 const instructions = document.getElementById("instructions");
 const reset = document.getElementById("new");
-const mode = document.querySelectorAll(".mode");
+const mode = document.querySelectorAll("mode");
 
 // No longer hard coded, picked by a function at the bottom of the code
 var correct = colorPicker();
