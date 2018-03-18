@@ -93,7 +93,7 @@ for(var i = 0; i < square.length; i++){
             colorChange(clicked);
             console.log("You clicked on: " + clicked);
         }else{
-            this.style.backgroundColor = "#232323";
+            this.style.backgroundColor = "darkblue";
             message.textContent = "Try again!";
             console.log("You clicked on " + clicked);
         }
