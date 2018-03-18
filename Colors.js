@@ -18,7 +18,9 @@ const displayColor = colorPicker();
 
 for(var i =0; i < mode.length; i++){
     mode[i].addEventListener("click", function(){
-
+    mode[0].classList.remove("selected");
+    mode[1].classList.remove("selected");
+    this.classList.add("selected");
     });
 }
 // Adds the event listener for changing to easy mode
