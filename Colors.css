@@ -10,6 +10,7 @@ h1{
     margin:0;
     text-transform:uppercase;
     padding:15px 0;
+    letter-spacing:2px;
 }
 h1 span{
     display:block;
@@ -28,6 +29,8 @@ button{
     text-transform:uppercase;
     height:100%;
     font-weight:700;
+    letter-spacing:1px;
+    font-size:inherit;
 }
 .square{
     width:30%;
@@ -53,9 +56,12 @@ button{
 }
 #message{
     color:white;
+    display:inline-block;
+    width:10%;
 }
 #instructions{
     background-color:cyan;
+    font-weight:600;
 }
 #picker{
     font-size:130%;
