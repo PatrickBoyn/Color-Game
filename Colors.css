@@ -3,6 +3,7 @@ body{
     color:rgb(0, 0, 0);
     text-align:center;
     margin:0 auto;
+    font-family:"Footlight MT Light", "Arial";
 }
 h1{
     background-color:cyan;
