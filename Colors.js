@@ -21,10 +21,20 @@ for(var i =0; i < mode.length; i++){
     mode[0].classList.remove("selected");
     mode[1].classList.remove("selected");
     this.classList.add("selected");
+    this.textContent === "Easy" ? numsquares = 3: numsquares = 6;
+    reset();
     });
 }
 function reset(){
-
+    colors = colorGenerator(numsquares);
+    correct = colorPicker();
+    picker.textContent = correct;
+    message.textContent = "";
+    for(var i = 0; i < square.length; i++){
+        square[i].style.backgroundColor = colors[i];
+    }
+    h1.style.backgroundColor =  "cyan";
+    reset.textContent = "New Colors";
 };
 // Adds the event listener for changing to easy mode
 // easy.addEventListener("click", function(){
