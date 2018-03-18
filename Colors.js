@@ -26,6 +26,7 @@ easy.addEventListener("click", function(){
     colors = colorGenerator(numsquares);
     correct = colorPicker();
     picker.textContent = correct;
+    message.textContent = "";
     for(var i = 0; i < square.length; i++){
         if(colors[i]){
             square[i].style.background = colors[i];
