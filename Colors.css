@@ -64,6 +64,10 @@ button:hover{
     background-color:red;
     color:white;
 }
+.selected{
+    background-color:darkblue;
+    color:cyan;
+}
 #stripe{
     background-color:darkblue;
 }
