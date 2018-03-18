@@ -16,42 +16,46 @@ var correct = colorPicker();
 // Display the correct color.
 const displayColor = colorPicker();
 
+for(var i =0; i < mode.length; i++){
+    mode[i].addEventListener("click", function(){
 
+    });
+}
 // Adds the event listener for changing to easy mode
-easy.addEventListener("click", function(){
-    easy.classList.add("easy");
-    hard.classList.remove("hard");
-    numsquares = 3;
-    colors = colorGenerator(numsquares);
-    correct = colorPicker();
-    picker.textContent = correct;
-    message.textContent = "";
+// easy.addEventListener("click", function(){
+//     easy.classList.add("easy");
+//     hard.classList.remove("hard");
+//     numsquares = 3;
+//     colors = colorGenerator(numsquares);
+//     correct = colorPicker();
+//     picker.textContent = correct;
+//     message.textContent = "";
 
-    for(var i = 0; i < square.length; i++){
-        if(colors[i]){
-            square[i].style.background = colors[i];
-        }else{
-            square[i].style.display = "none";
-        };
-    };
+//     for(var i = 0; i < square.length; i++){
+//         if(colors[i]){
+//             square[i].style.background = colors[i];
+//         }else{
+//             square[i].style.display = "none";
+//         };
+//     };
 
-    console.log(colors);
-});
+//     console.log(colors);
+// });
 
 // Same for the hard mode
-hard.addEventListener("click", function(){
-    hard.classList.add("hard");
-    easy.classList.remove("easy");
-    numsquares = 6;
-    colors = colorGenerator(numsquares);
-    correct = colorPicker();
-    message.textContent = "";
-    for(var i = 0; i < square.length; i++){
-        square[i].style.background = colors[i];
-        square[i].style.display = "block";
-    }
-    console.log(colors);
-});
+// hard.addEventListener("click", function(){
+//     hard.classList.add("hard");
+//     easy.classList.remove("easy");
+//     numsquares = 6;
+//     colors = colorGenerator(numsquares);
+//     correct = colorPicker();
+//     message.textContent = "";
+//     for(var i = 0; i < square.length; i++){
+//         square[i].style.background = colors[i];
+//         square[i].style.display = "block";
+//     }
+//     console.log(colors);
+// });
 
 // Resets the game
 reset.addEventListener("click", function(){
