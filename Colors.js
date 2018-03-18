@@ -3,94 +3,75 @@ var numsquares = 6;
 var colors = colorGenerator(numsquares);
 // The selectors
 const square = document.querySelectorAll(".square");
+const displayColor = colorPicker();
 const message = document.getElementById("message");
 const picker = document.getElementById("picker");
 const h1 = document.querySelector("h1");
 const stripe = document.getElementById("stripe");
 const instructions = document.getElementById("instructions");
 const reset = document.getElementById("new");
-const mode = document.querySelectorAll("mode");
+const easy = document.getElementById("easy");
+const hard = document.getElementById("hard");
+// A boolean for later
+const isOver = true;
 
 // No longer hard coded, picked by a function at the bottom of the code
 var correct = colorPicker();
-// Display the correct color.
-const displayColor = colorPicker();
-loop();
 
-for(var i =0; i < mode.length; i++){
-    mode[i].addEventListener("click", function(){
-    mode[0].classList.remove("selected");
-    mode[1].classList.remove("selected");
-    this.classList.add("selected");
-    this.textContent === "Easy" ? numsquares = 3: numsquares = 6;
-    reset();
-    });
-}
-function reset(){
+// Adds the event listener for changing to easy mode
+easy.addEventListener("click", function(){
+    easy.classList.add("easy");
+    hard.classList.remove("hard");
+    numsquares = 3;
     colors = colorGenerator(numsquares);
     correct = colorPicker();
-    loop();
     picker.textContent = correct;
-    message.textContent = "";
-    h1.style.backgroundColor =  "cyan";
-    reset.textContent = "New Colors";
-};
-
-function loop(){
     for(var i = 0; i < square.length; i++){
-        square[i].style.backgroundColor = colors[i];
+        if(colors[i]){
+            square[i].style.background = colors[i];
+        }else{
+            square[i].style.display = "none";
+        };
+    };
+    console.log(colors);
+});
+// Same for the hard mode
+hard.addEventListener("click", function(){
+    hard.classList.add("hard");
+    easy.classList.remove("easy");
+    numsquares = 6;
+    colors = colorGenerator(numsquares);
+    correct = colorPicker();
+    for(var i = 0; i < square.length; i++){
+        square[i].style.background = colors[i];
         square[i].style.display = "block";
     }
-}
-// Adds the event listener for changing to easy mode
-// easy.addEventListener("click", function(){
-//     easy.classList.add("easy");
-//     hard.classList.remove("hard");
-//     numsquares = 3;
-//     colors = colorGenerator(numsquares);
-//     correct = colorPicker();
-//     picker.textContent = correct;
-//     message.textContent = "";
-
-//     for(var i = 0; i < square.length; i++){
-//         if(colors[i]){
-//             square[i].style.background = colors[i];
-//         }else{
-//             square[i].style.display = "none";
-//         };
-//     };
-
-//     console.log(colors);
-// });
-
-// Same for the hard mode
-// hard.addEventListener("click", function(){
-//     hard.classList.add("hard");
-//     easy.classList.remove("easy");
-//     numsquares = 6;
-//     colors = colorGenerator(numsquares);
-//     correct = colorPicker();
-//     message.textContent = "";
-//     for(var i = 0; i < square.length; i++){
-//         square[i].style.background = colors[i];
-//         square[i].style.display = "block";
-//     }
-//     console.log(colors);
-// });
+    console.log(colors);
+});
 
 // Resets the game
+reset.addEventListener("click", function(){
+    colors = colorGenerator(numsquares);
+    correct = colorPicker();
+    picker.textContent = correct;
+    for(var i = 0; i < square.length; i++){
+        square[i].style.backgroundColor = colors[i];
+    }
+    h1.style.backgroundColor =  "cyan";
+    reset.textContent = "New Colors";
+});
 
 // Sets the span to show the correct variable's RBG value
 // displayColor.textContent = correct;
 picker.textContent = correct;
 // Loops through all of the squares and gives them a different color
 for(var i = 0; i < square.length; i++){
-
-    square[i].style.backgroundColor = colors[i];    
+    
+    square[i].style.backgroundColor = colors[i];
+    
     // Makes all of the squares clickable colors
     square[i].addEventListener("click", function(){
         // Tests to see if squares are clickable
-       
         const clicked = this.style.backgroundColor;
         
         // Checks if the right answer was clicked
@@ -107,7 +88,6 @@ for(var i = 0; i < square.length; i++){
         }
     });
 };
-
 
 // Changes all squares to the color of the correct square
 function colorChange(color){
