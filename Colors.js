@@ -43,6 +43,7 @@ hard.addEventListener("click", function(){
     numsquares = 6;
     colors = colorGenerator(numsquares);
     correct = colorPicker();
+    message.textContent = "";
     for(var i = 0; i < square.length; i++){
         square[i].style.background = colors[i];
         square[i].style.display = "block";
@@ -55,6 +56,7 @@ reset.addEventListener("click", function(){
     colors = colorGenerator(numsquares);
     correct = colorPicker();
     picker.textContent = correct;
+    message.textContent = "";
     for(var i = 0; i < square.length; i++){
         square[i].style.backgroundColor = colors[i];
     }
