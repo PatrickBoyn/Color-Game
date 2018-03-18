@@ -1,5 +1,5 @@
 body{
-    background:#232323;
+    background:darkblue;
     color:darkblue;
     text-align:center;
     margin:0 auto;
@@ -51,6 +51,7 @@ button:hover{
     transition:background .8s;
     -webkit-transitoin:background .8s;
     -moz-transitoin:background .8s;
+    border:2px solid yellow;
 }
 .container{
     margin:20px auto;
