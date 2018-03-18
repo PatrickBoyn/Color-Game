@@ -8,12 +8,12 @@ body{
 h1{
     background-color:cyan;
     margin:0;
+    text-transform:uppercase;
 }
 h2{
     margin:0;
     text-align:center;
     font-weight:normal;
-    text-transform:uppercase;
 }
 p{
     margin:0;
