@@ -22,6 +22,8 @@ var correct = colorPicker();
 easy.addEventListener("click", function(){
     easy.classList.add("easy");
     hard.classList.remove("hard");
+    easy.classList.add("selected");
+    hard.classList.remove("selected");
     numsquares = 3;
     colors = colorGenerator(numsquares);
     correct = colorPicker();
@@ -39,6 +41,8 @@ easy.addEventListener("click", function(){
 hard.addEventListener("click", function(){
     hard.classList.add("hard");
     easy.classList.remove("easy");
+    hard.classList.add("selected");
+    easy.classList.remove("selected");
     numsquares = 6;
     colors = colorGenerator(numsquares);
     correct = colorPicker();
