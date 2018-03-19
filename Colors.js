@@ -48,6 +48,7 @@ function change(){
     picker.textContent = correct;
     for(var i = 0; i < square.length; i++){
         if(colors[i]){
+            square[i].style.display = "block";
             square[i].style.backgroundColor = colors[i];
         }else{
             square[i].style.display = "none";
