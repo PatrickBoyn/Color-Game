@@ -36,7 +36,7 @@ function change(){
     h1.style.backgroundColor =  "cyan";
     reset.textContent = "New Colors";
     message.textContent = "";
-});
+};
 
 // Sets the span to show the correct variable's RBG value
 // picker.textContent = correct;
@@ -102,10 +102,10 @@ for(var i = 0; i < square.length; i++){
 // });
 
 // Resets the game
-// reset.addEventListener("click", function(){
-    
-//     });
-// };
+,
+reset.addEventListener("click", function(){
+    change();
+}));
 
 // Changes all squares to the color of the correct square
 function colorChange(color){
