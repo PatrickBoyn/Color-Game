@@ -41,12 +41,14 @@ button:hover{
     background-color:darkblue;
     color:cyan;
 }
+/* This was originally a square, but I haven't had time to change it elsewhere in the code yet.  */
 .square{
     width:30%;
     padding-bottom:30%;
     margin:1.66%;
     float:left;
     background:yellow;
+    border:2px solid yellow;
     border-radius:50%;
     transition:background .8s;
     -webkit-transitoin:background .8s;
