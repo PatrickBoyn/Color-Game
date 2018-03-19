@@ -100,7 +100,7 @@ for(var i = 0; i < square.length; i++){
 //     }
 //     console.log(colors);
 // });
-,
+
 // Resets the game
 reset.addEventListener("click", function(){
     change();
@@ -138,4 +138,5 @@ function randomColor(){
     const b = Math.floor(Math.random() * 256);
 
     return "rgb(" + r + ", " + g  + ", " + b + ")";
-}};
+}
+};
