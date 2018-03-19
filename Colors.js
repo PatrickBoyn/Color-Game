@@ -2,7 +2,7 @@ var numsquares = 6;
 
 // The selectors
 const square = document.querySelectorAll(".square");
-const displayColor = colorPicker();
+// const displayColor = colorPicker();
 const message = document.getElementById("message");
 const picker = document.getElementById("picker");
 const h1 = document.querySelector("h1");
@@ -12,7 +12,7 @@ const reset = document.getElementById("new");
 var mode = document.querySelectorAll(".mode");
 
 // No longer hard coded, picked by a function at the bottom of the code
-var correct = colorPicker();
+// var correct = colorPicker();
 // The color generator
 var colors = colorGenerator(numsquares);
 
@@ -22,7 +22,7 @@ for(var i = 0; i < mode.length; i++){
         console.log("Mode clicked. ");
     });
 }
-
+console.log(mode.length);
 // Ignore the easy and hard mode buttons for now.  
 
 // Adds the event listener for changing to easy mode
@@ -74,7 +74,7 @@ reset.addEventListener("click", function(){
 });
 
 // Sets the span to show the correct variable's RBG value
-picker.textContent = correct;
+// picker.textContent = correct;
 // Loops through all of the squares and gives them a different color
 for(var i = 0; i < square.length; i++){
     
@@ -108,10 +108,10 @@ function colorChange(color){
     }
 };
 // Picks the color values 
-function colorPicker(){
-    const rand = Math.floor(Math.random() * colors.length);
-    return colors[rand];
-};
+// function colorPicker(){
+//     const rand = Math.floor(Math.random() * colors.length);
+//     return colors[rand];
+// };
 // Fills in the squares with random colors
 function colorGenerator(num){
     // The array to be filled
@@ -133,4 +133,4 @@ function randomColor(){
     return "rgb(" + r + ", " + g  + ", " + b + ")";
 };
 
-console.log("The correct color is: " + correct);
+// console.log("The correct color is: " + correct);
