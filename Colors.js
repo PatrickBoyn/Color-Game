@@ -24,7 +24,8 @@ for(var i = 0; i < mode.length; i++){
         console.log("Mode clicked. ");
     });
 }
-console.log(mode.length);
+console.log("Mode length is: " + mode.length);
+
 // Ignore the easy and hard mode buttons for now.  
 
 // Adds the event listener for changing to easy mode
@@ -135,4 +136,4 @@ function randomColor(){
     return "rgb(" + r + ", " + g  + ", " + b + ")";
 };
 
-// console.log("The correct color is: " + correct);
+console.log("The correct color is: " + correct);
