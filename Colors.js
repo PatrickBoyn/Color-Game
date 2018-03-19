@@ -10,8 +10,7 @@ const h1 = document.querySelector("h1");
 const stripe = document.getElementById("stripe");
 const instructions = document.getElementById("instructions");
 const reset = document.getElementById("new");
-const easy = document.getElementById("easy");
-const hard = document.getElementById("hard");
+
 // A boolean for later
 const isOver = true;
 
