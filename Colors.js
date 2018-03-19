@@ -22,6 +22,8 @@ for(var i = 0; i < mode.length; i++){
     });
 };
 
+// Ignore the easy and hard mode buttons for now.  
+
 // Adds the event listener for changing to easy mode
 easy.addEventListener("click", function(){
     easy.classList.add("easy");
