@@ -26,11 +26,9 @@ for(var i = 0; i < mode.length; i++){
         }else{
             select();
         }
-        if(this.textContent === "Easy"){
-            numsquares =3;
-        }else{
-            numsquares = 6;
-        }
+        
+        this.textContent ==="Easy" ? numsquares = 3: numsquares = 6;
+        
         change();
         console.log("Mode clicked. ");
     });
