@@ -17,7 +17,9 @@ var correct = colorPicker();
 var colors = colorGenerator(numsquares);
 
 for(var i = 0; i < mode.length; i++){
+    mode[i].addEventListener("click", function(){
 
+    });
 };
 
 // Adds the event listener for changing to easy mode
