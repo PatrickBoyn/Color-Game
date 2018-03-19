@@ -104,7 +104,7 @@ for(var i = 0; i < square.length; i++){
 // Resets the game
 reset.addEventListener("click", function(){
     change();
-});
+}));
 
 // Changes all squares to the color of the correct square
 function colorChange(color){
@@ -137,4 +137,4 @@ function randomColor(){
     const b = Math.floor(Math.random() * 256);
 
     return "rgb(" + r + ", " + g  + ", " + b + ")";
-};
+}};
