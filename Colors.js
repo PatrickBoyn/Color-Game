@@ -26,6 +26,12 @@ for(var i = 0; i < mode.length; i++){
         }else{
             select();
         }
+        if(this.textContent === "Easy"){
+            numsquares =3;
+        }else{
+            numsquares = 6;
+        }
+        reset();
         console.log("Mode clicked. ");
     });
 }
@@ -45,13 +51,6 @@ function reset(){
     h1.style.backgroundColor =  "cyan";
     reset.textContent = "New Colors";
     message.textContent = "";
-    
-    if(this.textContent === "Easy"){
-        numsquares =3;
-    }else{
-        numsquares = 6;
-    }
-    reset();
 }
 console.log("Mode length is: " + mode.length);
 
