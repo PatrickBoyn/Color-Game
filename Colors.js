@@ -103,7 +103,7 @@ for(var i = 0; i < square.length; i++){
 
 // Resets the game
 reset.addEventListener("click", function(){
-    change();
+    
 }));
 
 // Changes all squares to the color of the correct square
