@@ -18,7 +18,7 @@ var colors = colorGenerator(numsquares);
 
 for(var i = 0; i < mode.length; i++){
     mode[i].addEventListener("click", function(){
-        this.classList.toggle("selected");
+        mode[i].classList.toggle("selected");
         console.log("Mode clicked. ");
     });
 }
