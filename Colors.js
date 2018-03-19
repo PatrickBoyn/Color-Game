@@ -20,11 +20,19 @@ picker.textContent = correct;
 
 for(var i = 0; i < mode.length; i++){
     mode[i].addEventListener("click", function(){
-        mode[0].classList.remove("selected");
-        mode[1].classList.remove("selected");
-        this.classList.add("selected");
+        // If one is selected when the other is clicked, turn it off
+        if(mode[0] === "selected"){
+            select();
+        }else{
+            select();
+        }
         console.log("Mode clicked. ");
     });
+}
+// Which mode to toggle on and off. 
+function select(){
+    mode[1].classList.toggle("selected");
+    mode[0].classList.toggle("selected");
 }
 console.log("Mode length is: " + mode.length);
 
