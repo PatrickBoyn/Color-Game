@@ -47,7 +47,7 @@ button:hover{
     margin:1.66%;
     float:left;
     background:yellow;
-    border-radius:15%;
+    border-radius:50%;
     transition:background .8s;
     -webkit-transitoin:background .8s;
     -moz-transitoin:background .8s;
