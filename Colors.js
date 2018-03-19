@@ -12,9 +12,6 @@ const instructions = document.getElementById("instructions");
 const reset = document.getElementById("new");
 const mode = document.querySelectorAll(".mode");
 
-// A boolean for later
-const isOver = true;
-
 // No longer hard coded, picked by a function at the bottom of the code
 var correct = colorPicker();
 
