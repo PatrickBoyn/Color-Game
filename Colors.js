@@ -62,7 +62,7 @@ for(var i = 0; i < square.length; i++){
             message.textContent = "Try again!";
             console.log("You clicked on " + clicked);
         }
-}
+};
 
 // Ignore the easy and hard mode buttons for now.  
 
@@ -102,10 +102,9 @@ for(var i = 0; i < square.length; i++){
 // });
 
 // Resets the game
-,
 reset.addEventListener("click", function(){
     change();
-}));
+});
 
 // Changes all squares to the color of the correct square
 function colorChange(color){
@@ -140,4 +139,4 @@ function randomColor(){
     return "rgb(" + r + ", " + g  + ", " + b + ")";
 };
 
-// console.log("The correct color is: " + correct);
+console.log("The correct color is: " + correct);
