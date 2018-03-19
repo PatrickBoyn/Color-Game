@@ -62,7 +62,7 @@ for(var i = 0; i < square.length; i++){
             message.textContent = "Try again!";
             console.log("You clicked on " + clicked);
         }
-};
+}
 
 // Ignore the easy and hard mode buttons for now.  
 
@@ -138,5 +138,3 @@ function randomColor(){
 
     return "rgb(" + r + ", " + g  + ", " + b + ")";
 };
-
-console.log("The correct color is: " + correct);
