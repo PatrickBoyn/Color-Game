@@ -100,7 +100,7 @@ for(var i = 0; i < square.length; i++){
 //     }
 //     console.log(colors);
 // });
-
+,
 // Resets the game
 reset.addEventListener("click", function(){
     change();
@@ -118,6 +118,7 @@ function colorPicker(){
     const rand = Math.floor(Math.random() * colors.length);
     return colors[rand];
 };
+
 // Fills in the squares with random colors
 function colorGenerator(num){
     // The array to be filled
