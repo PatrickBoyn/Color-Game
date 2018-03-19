@@ -54,43 +54,6 @@ function change(){
 }
 console.log("Mode length is: " + mode.length);
 
-// Ignore the easy and hard mode buttons for now.  
-
-// Adds the event listener for changing to easy mode
-// easy.addEventListener("click", function(){
-//     easy.classList.add("easy");
-//     hard.classList.remove("hard");
-//     easy.classList.add("selected");
-//     hard.classList.remove("selected");
-//     numsquares = 3;
-//     colors = colorGenerator(numsquares);
-//     correct = colorPicker();
-//     picker.textContent = correct;
-//     for(var i = 0; i < square.length; i++){
-//         if(colors[i]){
-//             square[i].style.background = colors[i];
-//         }else{
-//             square[i].style.display = "none";
-//         };
-//     };
-//     console.log(colors);
-// });
-// // Same for the hard mode
-// hard.addEventListener("click", function(){
-//     hard.classList.add("hard");
-//     easy.classList.remove("easy");
-//     hard.classList.add("selected");
-//     easy.classList.remove("selected");
-//     numsquares = 6;
-//     colors = colorGenerator(numsquares);
-//     correct = colorPicker();
-//     for(var i = 0; i < square.length; i++){
-//         square[i].style.background = colors[i];
-//         square[i].style.display = "block";
-//     }
-//     console.log(colors);
-// });
-
 // Resets the game
 reset.addEventListener("click", function(){
     change();
