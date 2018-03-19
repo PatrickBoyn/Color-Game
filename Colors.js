@@ -59,7 +59,6 @@ reset.addEventListener("click", function(){
     }
     h1.style.backgroundColor =  "cyan";
     reset.textContent = "New Colors";
-    message.textContent = "";
 });
 
 // Sets the span to show the correct variable's RBG value
