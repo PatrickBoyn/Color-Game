@@ -16,11 +16,13 @@ var correct = colorPicker();
 // The color generator
 var colors = colorGenerator(numsquares);
 
-for(var i = 0; i < mode.length; i++){
+for(var i =0; i < mode.length; i++){
     mode[i].addEventListener("click", function(){
+        mode[0].classList.removed("selected");
+        mode[1].classList.add("selected");
         this.classList.add("selected");
     });
-};
+}
 
 // Ignore the easy and hard mode buttons for now.  
 
