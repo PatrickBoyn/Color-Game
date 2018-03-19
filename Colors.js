@@ -31,7 +31,7 @@ for(var i = 0; i < mode.length; i++){
         }else{
             numsquares = 6;
         }
-        reset();
+        change();
         console.log("Mode clicked. ");
     });
 }
@@ -41,7 +41,7 @@ function select(){
     mode[0].classList.toggle("selected");
 }
 
-function reset(){
+function change(){
     colors = colorGenerator(numsquares);
     correct = colorPicker();
     picker.textContent = correct;
@@ -92,17 +92,9 @@ console.log("Mode length is: " + mode.length);
 // });
 
 // Resets the game
-// reset.addEventListener("click", function(){
-//     colors = colorGenerator(numsquares);
-//     correct = colorPicker();
-//     picker.textContent = correct;
-//     for(var i = 0; i < square.length; i++){
-//         square[i].style.backgroundColor = colors[i];
-//     }
-//     h1.style.backgroundColor =  "cyan";
-//     reset.textContent = "New Colors";
-//     message.textContent = "";
-// });
+reset.addEventListener("click", function(){
+    change();
+});
 
 // Sets the span to show the correct variable's RBG value
 // picker.textContent = correct;
