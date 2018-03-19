@@ -34,6 +34,7 @@ function select(){
     mode[1].classList.toggle("selected");
     mode[0].classList.toggle("selected");
 }
+
 function reset(){
     colors = colorGenerator(numsquares);
     correct = colorPicker();
