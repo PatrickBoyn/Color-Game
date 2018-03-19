@@ -1,6 +1,8 @@
 var numsquares = 6;
 // The color generator
 var colors = colorGenerator(numsquares);
+// No longer hard coded, picked by a function at the bottom of the code
+var correct = colorPicker();
 
 // The selectors
 const square = document.querySelectorAll(".square");
@@ -12,9 +14,6 @@ const stripe = document.getElementById("stripe");
 const instructions = document.getElementById("instructions");
 const reset = document.getElementById("new");
 var mode = document.querySelectorAll(".mode");
-
-// No longer hard coded, picked by a function at the bottom of the code
-var correct = colorPicker();
 
 init();
 
@@ -107,8 +106,6 @@ function init(){
 // Loops through all of the squares and gives them a different color
 for(var i = 0; i < square.length; i++){
     
-    square[i].style.backgroundColor = colors[i];
-    
     // Makes all of the squares clickable colors
     square[i].addEventListener("click", function(){
         // Tests to see if squares are clickable
@@ -128,6 +125,8 @@ for(var i = 0; i < square.length; i++){
         }
     });
 };
+
+change();
 };
 
 console.log("The correct color is: " + correct);
