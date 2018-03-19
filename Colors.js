@@ -34,6 +34,17 @@ function select(){
     mode[1].classList.toggle("selected");
     mode[0].classList.toggle("selected");
 }
+function reset(){
+    colors = colorGenerator(numsquares);
+    correct = colorPicker();
+    picker.textContent = correct;
+    for(var i = 0; i < square.length; i++){
+        square[i].style.backgroundColor = colors[i];
+    }
+    h1.style.backgroundColor =  "cyan";
+    reset.textContent = "New Colors";
+    message.textContent = "";
+}
 console.log("Mode length is: " + mode.length);
 
 // Ignore the easy and hard mode buttons for now.  
@@ -74,17 +85,17 @@ console.log("Mode length is: " + mode.length);
 // });
 
 // Resets the game
-reset.addEventListener("click", function(){
-    colors = colorGenerator(numsquares);
-    correct = colorPicker();
-    picker.textContent = correct;
-    for(var i = 0; i < square.length; i++){
-        square[i].style.backgroundColor = colors[i];
-    }
-    h1.style.backgroundColor =  "cyan";
-    reset.textContent = "New Colors";
-    message.textContent = "";
-});
+// reset.addEventListener("click", function(){
+//     colors = colorGenerator(numsquares);
+//     correct = colorPicker();
+//     picker.textContent = correct;
+//     for(var i = 0; i < square.length; i++){
+//         square[i].style.backgroundColor = colors[i];
+//     }
+//     h1.style.backgroundColor =  "cyan";
+//     reset.textContent = "New Colors";
+//     message.textContent = "";
+// });
 
 // Sets the span to show the correct variable's RBG value
 // picker.textContent = correct;
