@@ -22,7 +22,7 @@ for(var i =0; i < mode.length; i++){
         mode[1].classList.add("selected");
         this.classList.add("selected");
     });
-}
+};
 
 // Ignore the easy and hard mode buttons for now.  
 
