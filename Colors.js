@@ -18,7 +18,7 @@ var correct = colorPicker();
 
 for(var i = 0; i < mode.length; i++){
     mode[i].addEventListener("click", function(){
-        this.classList.toggle("selected");
+        this.classList.add("selected");
         console.log("Mode clicked. ");
     });
 }
