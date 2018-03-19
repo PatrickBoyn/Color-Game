@@ -1,6 +1,5 @@
 var numsquares = 6;
-// The color generator
-var colors = colorGenerator(numsquares);
+
 // The selectors
 const square = document.querySelectorAll(".square");
 const displayColor = colorPicker();
@@ -14,6 +13,9 @@ const mode = document.querySelectorAll(".mode");
 
 // No longer hard coded, picked by a function at the bottom of the code
 var correct = colorPicker();
+// The color generator
+var colors = colorGenerator(numsquares);
+
 
 // Adds the event listener for changing to easy mode
 easy.addEventListener("click", function(){
