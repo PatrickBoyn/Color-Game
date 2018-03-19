@@ -45,6 +45,13 @@ function reset(){
     h1.style.backgroundColor =  "cyan";
     reset.textContent = "New Colors";
     message.textContent = "";
+    
+    if(this.textContent === "Easy"){
+        numsquares =3;
+    }else{
+        numsquares = 6;
+    }
+    reset();
 }
 console.log("Mode length is: " + mode.length);
 
