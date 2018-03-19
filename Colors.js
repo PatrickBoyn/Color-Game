@@ -1,8 +1,10 @@
 var numsquares = 6;
+// The color generator
+var colors = colorGenerator(numsquares);
 
 // The selectors
 const square = document.querySelectorAll(".square");
-// const displayColor = colorPicker();
+const displayColor = colorPicker();
 const message = document.getElementById("message");
 const picker = document.getElementById("picker");
 const h1 = document.querySelector("h1");
@@ -12,9 +14,7 @@ const reset = document.getElementById("new");
 var mode = document.querySelectorAll("mode");
 
 // No longer hard coded, picked by a function at the bottom of the code
-// var correct = colorPicker();
-// The color generator
-var colors = colorGenerator(numsquares);
+var correct = colorPicker();
 
 for(var i = 0; i < mode.length; i++){
     mode[i].addEventListener("click", function(){
@@ -108,10 +108,10 @@ function colorChange(color){
     }
 };
 // Picks the color values 
-// function colorPicker(){
-//     const rand = Math.floor(Math.random() * colors.length);
-//     return colors[rand];
-// };
+function colorPicker(){
+    const rand = Math.floor(Math.random() * colors.length);
+    return colors[rand];
+};
 // Fills in the squares with random colors
 function colorGenerator(num){
     // The array to be filled
