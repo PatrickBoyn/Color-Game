@@ -12,14 +12,13 @@ const stripe = document.getElementById("stripe");
 const instructions = document.getElementById("instructions");
 const reset = document.getElementById("new");
 var mode = document.querySelectorAll(".mode");
-const selected = document.querySelector("selected")
 
 // No longer hard coded, picked by a function at the bottom of the code
 var correct = colorPicker();
 
 for(var i = 0; i < mode.length; i++){
     mode[i].addEventListener("click", function(){
-        mode[i].classList.toggle(selected);
+        this.classList.toggle("selected");
         console.log("Mode clicked. ");
     });
 }
