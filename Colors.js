@@ -19,6 +19,7 @@ var colors = colorGenerator(numsquares);
 for(var i = 0; i < mode.length; i++){
     mode[i].addEventListener("click", function(){;
         this.classList.add("selected");
+        this.classList.remove("selected");
     });
 };
 
