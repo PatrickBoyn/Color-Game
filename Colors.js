@@ -25,45 +25,6 @@ for(var i = 0; i < mode.length; i++){
     });
 }
 console.log(mode.length);
-
-function change(){
-    colors = colorGenerator(numsquares);
-    correct = colorPicker();
-    picker.textContent = correct;
-    for(var i = 0; i < square.length; i++){
-        square[i].style.backgroundColor = colors[i];
-    }
-    h1.style.backgroundColor =  "cyan";
-    reset.textContent = "New Colors";
-    message.textContent = "";
-};
-
-// Sets the span to show the correct variable's RBG value
-// picker.textContent = correct;
-// Loops through all of the squares and gives them a different color
-for(var i = 0; i < square.length; i++){
-    
-    square[i].style.backgroundColor = colors[i];
-    
-    // Makes all of the squares clickable colors
-    square[i].addEventListener("click", function(){
-        // Tests to see if squares are clickable
-        const clicked = this.style.backgroundColor;
-        
-        // Checks if the right answer was clicked
-        if(clicked === correct){
-            message.textContent = "Correct!";
-            h1.style.backgroundColor = correct;
-            reset.textContent = "Play again?";
-            colorChange(clicked);
-            console.log("You clicked on: " + clicked);
-        }else{
-            this.style.backgroundColor = "darkblue";
-            message.textContent = "Try again!";
-            console.log("You clicked on " + clicked);
-        }
-}
-
 // Ignore the easy and hard mode buttons for now.  
 
 // Adds the event listener for changing to easy mode
@@ -103,8 +64,43 @@ for(var i = 0; i < square.length; i++){
 
 // Resets the game
 reset.addEventListener("click", function(){
+    colors = colorGenerator(numsquares);
+    correct = colorPicker();
+    picker.textContent = correct;
+    for(var i = 0; i < square.length; i++){
+        square[i].style.backgroundColor = colors[i];
+    }
+    h1.style.backgroundColor =  "cyan";
+    reset.textContent = "New Colors";
+    message.textContent = "";
+});
+
+// Sets the span to show the correct variable's RBG value
+// picker.textContent = correct;
+// Loops through all of the squares and gives them a different color
+for(var i = 0; i < square.length; i++){
     
-}));
+    square[i].style.backgroundColor = colors[i];
+    
+    // Makes all of the squares clickable colors
+    square[i].addEventListener("click", function(){
+        // Tests to see if squares are clickable
+        const clicked = this.style.backgroundColor;
+        
+        // Checks if the right answer was clicked
+        if(clicked === correct){
+            message.textContent = "Correct!";
+            h1.style.backgroundColor = correct;
+            reset.textContent = "Play again?";
+            colorChange(clicked);
+            console.log("You clicked on: " + clicked);
+        }else{
+            this.style.backgroundColor = "darkblue";
+            message.textContent = "Try again!";
+            console.log("You clicked on " + clicked);
+        }
+    });
+};
 
 // Changes all squares to the color of the correct square
 function colorChange(color){
@@ -118,7 +114,6 @@ function colorPicker(){
     const rand = Math.floor(Math.random() * colors.length);
     return colors[rand];
 };
-
 // Fills in the squares with random colors
 function colorGenerator(num){
     // The array to be filled
@@ -138,5 +133,6 @@ function randomColor(){
     const b = Math.floor(Math.random() * 256);
 
     return "rgb(" + r + ", " + g  + ", " + b + ")";
-}
 };
+
+// console.log("The correct color is: " + correct);
