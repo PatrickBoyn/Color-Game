@@ -80,12 +80,10 @@ for(var i = 0; i < square.length; i++){
             message.textContent = "Correct!";
             h1.style.backgroundColor = correct;
             reset.textContent = "Play again?";
-            this.style.borderColor = "yellow";
             colorChange(clicked);
             console.log("You clicked on: " + clicked);
         }else{
-            this.style.backgroundColor = "darkblue";
-            this.style.borderColor = "darkblue";
+            this.style.backgroundColor = "darkblue";;
             message.textContent = "Try again!";
             console.log("You clicked on " + clicked);
         }

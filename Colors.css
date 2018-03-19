@@ -48,7 +48,6 @@ button:hover{
     margin:1.66%;
     float:left;
     background:yellow;
-    border:2px solid yellow;
     border-radius:50%;
     transition:background .8s;
     -webkit-transitoin:background .8s;
