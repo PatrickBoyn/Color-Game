@@ -25,6 +25,11 @@ for(var i = 0; i < mode.length; i++){
     });
 }
 console.log(mode.length);
+
+function change(){
+    
+}
+
 // Ignore the easy and hard mode buttons for now.  
 
 // Adds the event listener for changing to easy mode
