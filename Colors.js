@@ -16,6 +16,8 @@ var mode = document.querySelectorAll(".mode");
 // No longer hard coded, picked by a function at the bottom of the code
 var correct = colorPicker();
 
+picker.textContent = correct;
+
 for(var i = 0; i < mode.length; i++){
     mode[i].addEventListener("click", function(){
         mode[0].classList.remove("selected");
