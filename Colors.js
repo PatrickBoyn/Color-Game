@@ -21,12 +21,14 @@ picker.textContent = correct;
 for(var i = 0; i < mode.length; i++){
     mode[i].addEventListener("click", function(){
         // If one is selected when the other is clicked, turn it off
+        // I came up with this part on my own. 
         if(mode[0] === "selected"){
             select();
         }else{
             select();
         }
         
+        // Complicated if statement with a ternary operator 
         this.textContent ==="Easy" ? numsquares = 3: numsquares = 6;
         
         change();
@@ -39,12 +41,18 @@ function select(){
     mode[0].classList.toggle("selected");
 }
 
+// Changes everything on reset
 function change(){
     colors = colorGenerator(numsquares);
     correct = colorPicker();
     picker.textContent = correct;
     for(var i = 0; i < square.length; i++){
-        square[i].style.backgroundColor = colors[i];
+        if(colors[i]){
+            square[i].style.backgroundColor = colors[i];
+        }else{
+            square[i].style.display = "none";
+        }
+
     }
     h1.style.backgroundColor =  "cyan";
     reset.textContent = "New Colors";
