@@ -11,14 +11,14 @@ const h1 = document.querySelector("h1");
 const stripe = document.getElementById("stripe");
 const instructions = document.getElementById("instructions");
 const reset = document.getElementById("new");
-var mode = document.querySelectorAll("mode");
+var mode = document.querySelectorAll(".mode");
 
 // No longer hard coded, picked by a function at the bottom of the code
 var correct = colorPicker();
 
 for(var i = 0; i < mode.length; i++){
     mode[i].addEventListener("click", function(){
-        mode[i].classList.toggle("selected");
+        mode[i].classList.toggle(".selected");
         console.log("Mode clicked. ");
     });
 }
